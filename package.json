@@ -1,0 +1,16 @@
+{
+  "name": "vue_pgsql",
+  "version": "1.0.0",
+  "description": "Connected to Postgresql",
+  "main": "index.js",
+  "scripts": {
+		"test": "node index.js",
+		"fulltable" : "node fulltable.js",
+		"asyncfulltable" : "node asyncfulltable.js"
+  },
+  "author": "Wendelin Gerein",
+  "license": "ISC",
+  "dependencies": {
+    "pg": "^7.8.1"
+  }
+}
