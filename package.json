@@ -6,7 +6,8 @@
   "scripts": {
     "test": "node index.js",
     "fulltable": "node fulltable.js",
-    "asyncfulltable": "node asyncfulltable.js"
+    "asyncfulltable": "node asyncfulltable.js",
+    "exsql": "node ex.js"
   },
   "author": "Wendelin Gerein",
   "license": "ISC",
