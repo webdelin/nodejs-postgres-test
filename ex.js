@@ -17,8 +17,8 @@ async function execute(){
 		//await client.query("update users set phone = $1", [444]) //Funktioniert
 
 		//const { rows } = await client.query('INSERT INTO users(id) VALUES($1) RETURNING id')
-		//await client.query('INSERT INTO users(data) VALUES($1)', [newUser])
-		//await client.query("insert into users values ($1, $2, $3, $4, $5)", [rows[0], 'Gerein', '938467364', 'test@test.test', 1])
+		await client.query('delete from users')
+		//await client.query("insert into users(id, name, phone, email, active) values (DEFAULT, 'Gerein', '938467364', 'test@test.test', true)")
 
 		//console.log("Insert a new row")
 		await client.query("COMMIT")

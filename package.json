@@ -4,9 +4,9 @@
   "description": "Connected to Postgresql",
   "main": "index.js",
   "scripts": {
-		"test": "node index.js",
-		"fulltable" : "node fulltable.js",
-		"asyncfulltable" : "node asyncfulltable.js"
+    "test": "node index.js",
+    "fulltable": "node fulltable.js",
+    "asyncfulltable": "node asyncfulltable.js"
   },
   "author": "Wendelin Gerein",
   "license": "ISC",
