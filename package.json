@@ -12,6 +12,9 @@
   "author": "Wendelin Gerein",
   "license": "ISC",
   "dependencies": {
-    "pg": "^7.8.1"
+    "pg": "^7.8.1",
+    "request": "^2.88.0",
+    "request-progress": "^3.0.0",
+    "unzip": "^0.1.11"
   }
 }

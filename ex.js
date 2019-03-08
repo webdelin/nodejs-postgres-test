@@ -1,10 +1,10 @@
 const {Client} = require('pg')
 const client = new Client({
-	user: "postgres",
+	user: "wendelin",
 	password: "",
 	host: "localhost",
 	port: 5432,
-	database: "vue"
+	database: "csv_import"
 })
 
 execute()
@@ -14,11 +14,12 @@ async function execute(){
 		
 		await client.connect()
 		await client.query("BEGIN")
-		await client.query("update users set phone = 00000000 where id = 24") //Funktioniert
+		//await client.query("update users set phone = 00000000 where id = 24") //Funktioniert
 
 		//const { rows } = await client.query('INSERT INTO users(id) VALUES($1) RETURNING id')
 		//await client.query('delete from users')
-		await client.query("insert into users(id, name, phone, email, active) values (DEFAULT, 'Gerein', '938467364', 'test@test.test', true)")
+		//await client.query("insert into users(id, name, phone, email, active) values (DEFAULT, 'Gerein', '938467364', 'test@test.test', true)")
+		await client.query("select load_csv_file('awin','/Users/wendelin/Desktop/VUE_PGSQL/csv/datafeed_399251.csv',93)")
 
 		console.log("Insert a new row")
 		await client.query("COMMIT")
