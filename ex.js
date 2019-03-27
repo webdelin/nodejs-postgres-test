@@ -19,7 +19,7 @@ csv
 		 //select load_csv_file('testen','/Users/wendelin/Desktop/csv_node_postgres/csv/test1.csv',18);
 		 return data.length;
  })
- .on("end", function(){
+ .on("end", function(){ 
 	execute()
 
 	async function execute(){
